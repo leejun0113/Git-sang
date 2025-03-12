@@ -3,7 +3,6 @@ def get_radius(prompt):
     return r
 
 def get_circle_area(radius):
-    pi = 3.14
     return pi * radius * radius
 
 pi = 3.14
