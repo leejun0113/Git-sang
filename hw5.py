@@ -14,9 +14,7 @@ def read_number(prompt):
         read_single_digit(int(number[0])) 
         read_single_digit(int(number[1]))
         read_single_digit(int(number[2]))
-    else: pass
     
 integer = int(input("세 자리 정수 입력: "))
 if 0 <= integer <= 999:
     read_number(integer)
-else: pass
