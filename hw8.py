@@ -1,15 +1,15 @@
 def buy(shopping_bag):
-    while True:
-        print('[구입]')
-        item_name = input('상품명? ')
-        if item_name == '':
-            return False
-        else:
-            item_amount = int(input('수량은? '))
-            shopping_bag[item_name] = item_amount
-            print(f'장바구니에 {item_name} {item_amount}개가 담겼습니다. \n')
-        return True
+    print('[구입]')
+    item_name = input('상품명? ')
 
+    if item_name == '':
+        return False
+    
+    item_amount = int(input('수량은? '))
+    shopping_bag[item_name] = item_amount
+    print(f'장바구니에 {item_name} {item_amount}개가 담겼습니다. \n')
+    return True
+    
 def show(shopping_bag):
     print(f'\n>>> 장바구니 보기: {shopping_bag}')
 
